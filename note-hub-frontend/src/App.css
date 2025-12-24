@@ -1,0 +1,23 @@
+/* Reset root container to full screen */
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* let Bootstrap handle alignment */
+  background-color: #f8f9fa; /* light background for consistency */
+}
+
+/* Remove demo logo styles */
+.logo,
+.logo.react,
+.read-the-docs {
+  display: none;
+}
+
+/* Card polish */
+.card {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

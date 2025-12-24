@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #213547;
+  --card-bg: #ffffff;
+  --link-color: #0d6efd;
+  --link-hover: #0a58ca;
+  --btn-hover-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --link-color: #9bbcff;
+  --link-hover: #c0d4ff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Hero section */
+.home-hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 4rem 2rem;
+}
+.home-hero button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-hover-shadow);
+}
+
+/* Card polish */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Auth hero background for Login/Signup */
+.auth-hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glassmorphism card for Login/Signup */
+.auth-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Button hover polish */
+.btn-primary, .btn-success {
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover, .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-hover-shadow);
+}
